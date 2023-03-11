@@ -20,9 +20,9 @@ public class IotSensorEvent {
     private String id;
     private String sensorId;
     private String type;
-    private double temperature;
-    private double humidity;
-    private boolean isOn;
+    private double value;
+    private String status;
     private Date timestamp;
-    private String unitId;
+    private String unit;
+    private String farmUnitId;
 }

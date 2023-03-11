@@ -16,10 +16,10 @@ public class IotSensorProcessedDto {
 
     private String sensorId;
     private String type;
-    private double temperature;
-    private double humidity;
-    private boolean isOn;
+    private double value;
+    private String status;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss.SSSx")
     private OffsetDateTime timestamp;
-    private String unitId;
+    private String unit;
+    private String farmUnitId;
 }

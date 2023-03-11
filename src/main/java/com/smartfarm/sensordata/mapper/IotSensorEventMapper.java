@@ -13,11 +13,11 @@ public class IotSensorEventMapper {
                 .id(UUID.randomUUID().toString())
                 .sensorId(iotSensorProcessedDto.getSensorId())
                 .type(iotSensorProcessedDto.getType())
-                .temperature(iotSensorProcessedDto.getTemperature())
-                .humidity(iotSensorProcessedDto.getHumidity())
-                .isOn(iotSensorProcessedDto.isOn())
-                .unitId(iotSensorProcessedDto.getUnitId())
+                .value(iotSensorProcessedDto.getValue())
+                .status(iotSensorProcessedDto.getStatus())
+                .unit(iotSensorProcessedDto.getUnit())
                 .timestamp(Date.from(iotSensorProcessedDto.getTimestamp().toInstant()))
+                .farmUnitId(iotSensorProcessedDto.getFarmUnitId())
                 .build();
     }
 }
